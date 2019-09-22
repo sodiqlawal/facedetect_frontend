@@ -70,7 +70,7 @@ class App extends Component {
       .then(response => {
         // console.log(response);
         if (response) {
-          fetch('http://localhost:3002/image', {
+          fetch(' https://evening-falls-75229.herokuapp.com/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

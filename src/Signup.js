@@ -36,7 +36,7 @@ class Signup extends Component {
   }
 
   onSubmitSignup = () => {
-    fetch('http://localhost:3002/signup', {
+    fetch(' https://evening-falls-75229.herokuapp.com/signup', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -111,9 +111,9 @@ class Signup extends Component {
                   </DropdownMenu>
                 </ButtonDropdown>
                 {/* end of home */}
-                <li className='list btn btn-light'>Pages</li>
-                <li className='list btn btn-light'>Work</li>
-                <li className='list btn btn-light'>Blog</li>
+                <li className='list btn btn-light lis'>Pages</li>
+                <li className='list btn btn-light lis'>Work</li>
+                <li className='list btn btn-light lis'>Blog</li>
                 <li className='list btn btn-light'>Docs</li>
                 <li
                   onClick={() => this.props.onRouteChange('signin')}
