@@ -7,7 +7,7 @@ import Clarifai from 'clarifai';
 import './App.css';
 
 const app = new Clarifai.App({
-  apiKey: 'afd803ffde89498e8c72bd3b2044cf08'
+  apiKey: process.env.API_CLARIFAI
 });
 
 
