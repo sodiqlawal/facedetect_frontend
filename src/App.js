@@ -7,7 +7,7 @@ import Clarifai from 'clarifai';
 import './App.css';
 
 const app = new Clarifai.App({
-  apiKey: 'afd803ffde89498e8c72bd3b2044cf08'
+  apiKey: 'fb30dc79ecfb4211a942d41ebb4891a8'
 });
 
 
@@ -33,14 +33,17 @@ class App extends Component {
 
   calculateFaceLocation = (data) => {
     const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
+    console.log(data)
+    // console.log('data', data)
+    // console.log('output',data.outputs)
     const image = document.getElementById('inputimage');
     const width = Number(image.width);
     const height = Number(image.height);
     return {
-      left_col: clarifaiFace.left_col * width,
-      topRow: clarifaiFace.top_row * height,
-      rightCol: width - (clarifaiFace.right_col * width),
-      bottomRow: height - (clarifaiFace.bottom_row * height)
+        left_col: clarifaiFace.left_col * width,
+        topRow: clarifaiFace.top_row * height,
+        rightCol: width - (clarifaiFace.right_col * width),
+        bottomRow: height - (clarifaiFace.bottom_row * height)
     }
     // return data.outputs[0].data.regions.map(face => {
     //   const clarifaiFace = face.region_info.bounding_box;
@@ -55,9 +58,8 @@ class App extends Component {
 
 
   displayFaceBox = (box) => {
-    this.setState({ box: box });
+    this.setState({box: box});
   }
-
   onInputChange = (e) => {
     this.setState({ input: e.target.value });
   }

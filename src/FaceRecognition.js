@@ -110,10 +110,10 @@ class FaceRecognition extends Component {
                     </div>
                     <div className='center ma'>
                         <div className='absolute mt2'>
-                            <img alt='' id='inputimage' src={imageUrl} width='500px' height='auto' />
-                            <div className='bounding-box'
-                                style={{ top: box.topRow, right: box.rightCol, bottom: box.bottomRow, left: box.left_col }}>
-                            </div>
+                        <img alt='' id='inputimage' src={imageUrl} width='500px' heigh='auto' />
+                        <div className='bounding-box' 
+                        style={{top: box.topRow, right: box.rightCol, bottom: box.bottomRow, left: box.left_col}}>
+                        </div>
                         </div>
                     </div>
                     {/* end of bodymiddle */}
