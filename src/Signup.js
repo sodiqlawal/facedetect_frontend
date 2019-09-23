@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './signup.css';
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 
@@ -146,7 +147,7 @@ class Signup extends Component {
                         id="name"
                       />
                     </div>
-                    <div className="mt3">
+                    <div className="mt3 input">
                       <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
                       <input className="pa2 input-reset ba bg-transparent hover-bg-black hover-dark w-100"
                         placeholder='Enter your email-address'

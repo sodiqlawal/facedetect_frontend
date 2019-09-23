@@ -86,9 +86,9 @@ class Home extends Component {
 									</DropdownMenu>
 								</ButtonDropdown>
 								{/* end of home */}
-								<li className='list btn btn-light'>Pages</li>
-								<li className='list btn btn-light'>Work</li>
-								<li className='list btn btn-light'>Blog</li>
+								<li className='list btn btn-light lis'>Pages</li>
+								<li className='list btn btn-light lis'>Work</li>
+								<li className='list btn btn-light lis'>Blog</li>
 								<li className='list btn btn-light'>Docs</li>
 								<li
 									onClick={() => this.props.onRouteChange('signin')}
