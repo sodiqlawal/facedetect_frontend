@@ -102,7 +102,7 @@ class Home extends Component {
 						<div className='mt6 d-flex justify-content-between'>
 							<div className='white ml6 w-50'>
 								<h1>Start your business with <b>Space.</b></h1>
-								<p>Build a beautiful modern website with flexible Bootstrap components built from scratch.</p>
+								<p>Detect any face using Space. Just click on detect face button below</p>
 								<div>
 									<button className='btn btn-primary'>Learn more</button>
 									<button
@@ -124,7 +124,7 @@ class Home extends Component {
 						<div className='mt6 d-flex justify-content-between'>
 							<div className='white ml6 w-50'>
 								<h1>Start your business with <b>Space.</b></h1>
-								<p>Build a beautiful modern website with flexible Bootstrap components built from scratch.</p>
+								<p>Detect any face using Space. Just click on detect face button below</p>
 								<div>
 									<button
 										onClick={() => this.props.onRouteChange('face')}

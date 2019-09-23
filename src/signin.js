@@ -117,8 +117,8 @@ class Signin extends Component {
 					<div className='bodymiddle'>
 						{/* start of miidlenote */}
 						<div className='middlenote white'>
-							<p className='middlenotep'>JOIN THE CHANGE</p>
-							<h1 className='middlenoteh'>Space service that moves work forward</h1>
+							<p className='middlenotep'>WELCOME TO FACEDETECT AI</p>
+							<h1 className='middlenoteh'>Space is an AI that helps to detect face</h1>
 						</div>
 						{/* end of middlenote */}
 						{/* start of signup */}
